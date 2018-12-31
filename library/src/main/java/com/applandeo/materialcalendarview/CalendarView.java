@@ -67,6 +67,10 @@ public class CalendarView extends LinearLayout {
 
     private CalendarProperties mCalendarProperties;
 
+    public CalendarProperties getCalendarProperties() {
+        return mCalendarProperties;
+    }
+
     public CalendarView(Context context, AttributeSet attrs) {
         super(context, attrs);
         initControl(context, attrs);
