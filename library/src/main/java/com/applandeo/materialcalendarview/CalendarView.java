@@ -63,6 +63,20 @@ public class CalendarView extends LinearLayout {
 
     private TextView mCurrentMonthLabel;
     private int mCurrentPage;
+
+    public CalendarViewPager getViewPager() {
+        return mViewPager;
+    }
+
+    public void moveForward() {
+        mViewPager.setCurrentItem(mViewPager.getCurrentItem() + 1);
+    }
+
+    public void moveBackward() {
+        mViewPager.setCurrentItem(mViewPager.getCurrentItem() - 1);
+    }
+
+
     private CalendarViewPager mViewPager;
 
     private CalendarProperties mCalendarProperties;
